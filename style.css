@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Public Sans', sans-serif;
+    box-sizing:border-box;
+}
+body{
+    background:#fff;
+    
+}
+
+.frist-div{
+    background: url(./image/caption.jpg) no-repeat center,center/cover;
+    position: sticky;
+    top: 0;
+    height: 17vh;
+  
+  
+}
+.side-bar{
+    display: inline-block;
+   
+    background:#242938;
+    backdrop-filter: blur(15px);
+    width:250px;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:-100%;
+    overflow-y:auto;
+   transition:0.4s ease;
+   transition-property:left;
+}
+.side-bar.active{
+    left:0;
+}
+.side-bar .manu{
+    width:100%;
+    margin-top:50px;
+}
+.side-bar .manu .item{
+    position:relative;
+    cursor:pointer;
+   
+}
+.side-bar .manu .item a{
+    color:#fff;
+    
+    font-size:16px;
+    text-decoration:none;
+    display:block;
+    padding:0px 15px;
+    line-height:60px;
+}
+.side-bar .manu .item a:hover{
+    background:#4c5778;
+    color:#ceac16;
+    transition:0.3s ease;
+}
+.side-bar .manu .item a .dropdown{
+    position:absolute;
+    right:0;
+    margin:20px;
+    transition:0.3s ease;
+} 
+.side-bar .manu .item .sub-manu{
+    background:#333a4f;
+   display: none;
+}
+.side-bar .manu .item .sub-manu a{
+    padding-left:60px;
+}
+.side-bar .manu .item .sub-manu .sub-item{   
+   border-bottom: 1px solid #4c5778;
+}
+.rotate{
+    transform:rotate(-90deg);
+}
+.close-btn{
+    position:absolute;
+    color:#fff;
+    font-size:25px;
+    right:0;
+    margin-right:8px;
+    margin-top: 1px;
+    cursor:pointer;
+}
+.manu-btn{
+    position:sticky;
+    top:0;
+    color:#000;
+    font-size:45px;
+    margin-top:45px;
+    margin-left:45px;
+    cursor:pointer;
+    float:left;
+}
+
+
+p{
+    padding-bottom: 10000px;
+}
